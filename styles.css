@@ -17,6 +17,7 @@
 }
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 html, body { margin: 0; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body {
   background: var(--bg);
   color: var(--text);
@@ -31,8 +32,8 @@ h2 { font-size: 22px; font-weight: 800; }
 h3 { font-size: 17px; font-weight: 700; }
 p { margin: 8px 0; }
 button { font: inherit; color: inherit; cursor: pointer; }
-input, select {
-  font: inherit; color: var(--text); background: var(--card2); border: 1px solid var(--line);
+input, select, textarea {
+  font: inherit; font-size: 16px; color: var(--text); background: var(--card2); border: 1px solid var(--line);
   border-radius: 12px; padding: 12px; width: 100%; min-width: 0; outline: none;
 }
 input:focus, select:focus { border-color: var(--accent); }
